@@ -1,0 +1,70 @@
+#text {
+    position: absolute;
+    width: 410px;
+    height: auto;
+    font-weight: 900;
+    font-size: 90;
+    text-align: center;
+    top: 20%;
+}
+#text1 {
+    position: absolute;
+    width: 410px;
+    height: auto;
+    font-size: 20;
+    text-align: center;
+    bottom: 45%;
+}
+#haji {
+    position: absolute;
+    text-align: center;
+    bottom: 35%;
+}
+#mondaiJa {
+    position: absolute;
+    width: 600px;
+    height: auto;
+    font-weight: 100;
+    font-size: 50;
+    text-align: center;
+    top: 20%;
+}
+#mondai {
+    position: absolute;
+    width: 410px;
+    height: auto;
+    font-size: 20;
+    text-align: center;
+    top: 40%;
+}
+#balloon {
+    position: absolute;
+    text-align: center;
+    width: 680px;
+    height: 680px;
+    border-radius: 50%;
+    background-color: rgb(254, 254, 68);
+    transform: scale(0);
+    animation-name: BalloonAnimation;
+    animation-duration: 120s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+}
+@keyframes BalloonAnimation {
+    0% {
+        width: 0px;
+        height: 0px;
+    }
+    50% {
+        transform: scale(1);
+        width: 340px;
+        height: 340px;
+        background-color: rgb(255, 108, 108);
+    }
+    100% {
+        transform: scale(1);
+        width: 680px;
+        height: 680px;
+        background-color: rgb(193, 127, 255);
+    }
+}
