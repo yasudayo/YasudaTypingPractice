@@ -83,9 +83,6 @@
         mondaiR.style.display = "block";
         mondaiR.innerText = Q[Qno].substring(Q_i, Q_l);
         mondaiJ.innerText = QJ[QJno];
-        console.log(QJ[QJno]);
-        console.log(Q[Qno]);
-        console.log(Q[Qno].length);
         mondaiR.style.display = "block";
         timer = setInterval(twoTimer, 1000);
         huusen.style.display = "block"
@@ -117,7 +114,6 @@
     }
     function twoTimer() {
         count--;
-        console.log(count)
         if (count === 0) {
             se.play()
             BGM1.pause()
